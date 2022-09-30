@@ -19,8 +19,8 @@ public class Principal {
 			cliente.valPeca = (float) ((Math.random() * 96) + 5);
 			fila.insert(cliente.valPeca);
 		}
-		OperacaoController op = new OperacaoController(fila);
-		op.caixa();
+		OperacaoController op = new OperacaoController();
+		op.caixa(fila);
 	}
 
 }

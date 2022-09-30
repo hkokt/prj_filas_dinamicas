@@ -4,12 +4,8 @@ import java.text.DecimalFormat;
 import br.edu.fateczl.filaobj.Fila;
 
 public class OperacaoController {
-	private Fila f; 
 
-public OperacaoController(Fila f){
-	this.f=f;
-}
-	public void caixa() {
+	public void caixa(Fila f) {
 		while (!f.isEmpty()) {
 			try {
 				String nome = (String) f.remove();
